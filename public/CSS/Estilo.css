@@ -2,15 +2,30 @@
 select{
     border: 0;
     font-family: Bahnschrift;
+    font-size: 20px;
     border-radius: 30px;
+    height: 50px;
     background-color: #6c5eff;
+    color:white;
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #6c5eff;
+    border-radius: 50px;
+}
+
+/* ::-webkit-scrollbar-track{
+    background: #3a3383;
+} */
 
 /* Títulos padrão */
 
 h1 {
-    font-family: clarendon Blk Bt Black;
+    font-family: 'Orelega One', cursive;
 }
 
 h2 {
@@ -31,9 +46,8 @@ html{
 }
 
 .container {
-    width: 90%;
+    width: 100%;
     display: flex;
-
 }
 
 .banner .container {
@@ -58,7 +72,7 @@ html{
 }
 
 .solicitar{
-    width: 50%;
+    width: 55%;
 }
 
 /**************************************************************************************************/
@@ -66,9 +80,9 @@ html{
 /* Código relacionado ao header */
 
 .header {
-    position: absolute;
+    position: fixed;
     z-index: 1000;
-    width: 100%;
+    /* width: 90%; */
 }
 
 .header .container{
@@ -77,6 +91,7 @@ html{
     align-items: center;
     justify-content: center;
     border-radius: 0 10px 10px 0px;
+    width: 90%;
 }
 
 .header .container .container{
@@ -129,7 +144,7 @@ h1 a {
     color: #3a3383;
     text-decoration: none;
     /* color: #6c5eff; */
-    font-family: clarendon Blk Bt Black;
+    font-family: 'Orelega One', cursive;
 }
 
 .agora {
@@ -624,11 +639,12 @@ body {
 .container_home {
     display: flex;
     flex-direction: row;
+    height: 100vh;
 }
 
 .card_titulo .titulo {
-    font-size: 1000%;
-    font-family: clarendon Blk Bt Black;
+    font-size: 150px;
+    font-family: 'Orelega One', cursive;
     margin-left: 2%;
 }
 
@@ -719,7 +735,8 @@ body {
     align-items: center;
     font-family: Bahnschrift;
     font-size: 10px;
-    color: #6c5eff;
+    color: white;
+    background-color: #3a3383;
     width: 45%;
 }
 
@@ -816,7 +833,7 @@ body {
 
 .card_sobre p {
     border: 0;
-    font-size: 30px;
+    font-size: 20px;
     width: 70%;
 }
 
